@@ -2,21 +2,23 @@ public class policyHolder
 {
 
 // step 2 creating string method
-   public static String toString() {
+   public String toString() {
+      return ""; // good practice to have a empty return over nothing
    } 
 
 
 
- public Policy(String pNumber, String pName, String fName, String lName,int a, String sStatus, double h, double w)
+ public policyHolder(String fName, String lName,int a, String sStatus, double h, double w)
    {
-      policyNumber = pNumber;
-      providerName = pName;
+     
       FirstName = fName;
       LastName = lName;
       age = a;
       smokingStatus = sStatus;
       height = h;
       weight = w;
+      policyHolderCount++;
+      
    }
 
  //fields
@@ -26,6 +28,7 @@ public class policyHolder
    private String smokingStatus;
    private double height;
    private double weight;
+   private static int policyHolderCount = 0; // STATIC COUNTER 
 
  /**
    @return The Policyholder's first name
