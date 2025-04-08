@@ -1,6 +1,12 @@
 public class policyHolder 
 {
 
+// step 2 creating string method
+   public String toString() {
+   } 
+
+
+
  public Policy(String pNumber, String pName, String fName, String lName,int a, String sStatus, double h, double w)
    {
       policyNumber = pNumber;
