@@ -1,15 +1,19 @@
 public class Policy
 { 
    // step 2 creating string method
-   public static String toString() {
+   public String toString() {
+      return ""; // place holder just good practice 
    } 
-   // step 4 creating class collaboration
-   private PolicyHolder holder;  // <- Policy has a PolicyHolder
+  
 
    
    //fields
    private String policyNumber;
    private String providerName;
+   private PolicyHolder holder;  // <- Policy has a PolicyHolder step 4 creating class collaboration
+   private static int policyCount = 0;  // step 3 added a static field to track number of policy 
+
+   
    /**
    No-arg constructor that explicitly initializes all fields
    */
@@ -17,7 +21,7 @@ public class Policy
    {
       policyNumber = "";
       providerName = "";   }
-   
+      policyCount++;// keeps track of number of policy's 
    /**
    Constructor that accepts arguments for each field
    @param pNumber The Policy number
@@ -30,7 +34,7 @@ public class Policy
       policyNumber = pNumber;
       providerName = pName;   
       holder = holder; }
-   
+        policyCount++;// keeps track of number of policy's 
    //getters//
    /**
    @return The Policy Number
