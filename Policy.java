@@ -1,5 +1,10 @@
 public class Policy
-{  //fields
+{ 
+   // step 2 creating string method
+   public String toString() {
+   } 
+   
+   //fields
    private String policyNumber;
    private String providerName;
    /**
