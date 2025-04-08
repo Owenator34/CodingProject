@@ -3,6 +3,9 @@ public class Policy
    // step 2 creating string method
    public static String toString() {
    } 
+   // step 4 creating class collaboration
+   private PolicyHolder holder;  // <- Policy has a PolicyHolder
+
    
    //fields
    private String policyNumber;
@@ -19,17 +22,14 @@ public class Policy
    Constructor that accepts arguments for each field
    @param pNumber The Policy number
    @param pName The Policy Provider's Name
-   @param fName The Policyhodler's first name
-   @param lName The Policyholder's last name
-   @param a The Policyholder's age
-   @param sStatus The Policyholder's smoking status
-   @param h The Policyholder's height
-   @param w The Policytholder's weight
+   @param fName The Policyhodler class
+
    */
-   public Policy(String pNumber, String pName, )
+   public Policy(String pNumber, String pName, policyHolder holder)
    {
       policyNumber = pNumber;
-      providerName = pName;   }
+      providerName = pName;   
+      holder = holder; }
    
    //getters//
    /**
