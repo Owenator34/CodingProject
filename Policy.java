@@ -1,7 +1,7 @@
 public class Policy
 { 
    // step 2 creating string method
-   public String toString() {
+   public static String toString() {
    } 
    
    //fields
