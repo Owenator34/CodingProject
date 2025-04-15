@@ -1,9 +1,13 @@
 public class Policy
 { 
    // step 2 creating string method
-   public String toString() {
-      return ""; // place holder just good practice 
-   } 
+public String toString() {
+   return "Policy Number: " + policyNumber + "\n" +
+          "Provider Name: " + providerName + "\n" +
+          holder.toString() +
+          String.format("Policy Price: $%.2f\n", getPrice());
+}
+
   
 
    
