@@ -2,9 +2,16 @@ public class policyHolder
 {
 
 // step 2 creating string method
-   public String toString() {
-      return ""; // good practice to have a empty return over nothing
-   } 
+public String toString() {
+   return "Policyholder's First Name: " + FirstName + "\n" +
+          "Policyholder's Last Name: " + LastName + "\n" +
+          "Policyholder's Age: " + age + "\n" +
+          "Policyholder's Smoking Status (Y/N): " + smokingStatus + "\n" +
+          "Policyholder's Height: " + height + " inches\n" +
+          "Policyholder's Weight: " + weight + " pounds\n" +
+          String.format("Policyholder's BMI: %.2f\n", getBMI());
+}
+
 
 
 
