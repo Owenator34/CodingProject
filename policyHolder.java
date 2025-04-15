@@ -20,7 +20,17 @@ public class policyHolder
       policyHolderCount++;
       
    }
+// defensive
+   public policyHolder(policyHolder other) {
+   this.FirstName = other.FirstName;
+   this.LastName = other.LastName;
+   this.age = other.age;
+   this.smokingStatus = other.smokingStatus;
+   this.height = other.height;
+   this.weight = other.weight;
+}
 
+   
  //fields
    private String FirstName;
    private String LastName;
