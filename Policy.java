@@ -21,6 +21,9 @@ public class Policy
    {
       policyNumber = "";
       providerName = "";   }
+
+   //defensive
+      this.holder = new policyHolder(holder);
       policyCount++;// keeps track of number of policy's 
    /**
    Constructor that accepts arguments for each field
